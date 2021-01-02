@@ -1,9 +1,9 @@
 #! /bin/bash
 printf "Installing RDP Be Patience... " >&2
 {
-sudo useradd -m ALOK
-sudo adduser ALOK sudo
-echo 'ALOK:8426' | sudo chpasswd
+sudo useradd -m PSK1
+sudo adduser PSK1 sudo
+echo 'PSK1:8426' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi
