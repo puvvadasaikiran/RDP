@@ -6,8 +6,8 @@ sudo adduser ALOK sudo
 echo 'ALOK:8426' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
-wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
-sudo dpkg --install chrome-remote-desktop_current_amd64.deb
+wget https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi
+sudo dpkg --install chromeremotedesktophost.msi
 sudo apt install --assume-yes --fix-broken
 sudo DEBIAN_FRONTEND=noninteractive \
 apt install --assume-yes xfce4 desktop-base
